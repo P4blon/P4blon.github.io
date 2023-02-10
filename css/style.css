@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container{
+        display: grid;
+        grid-template-columns:0.2fr 1fr 1fr 0.2fr;
+        grid-template-rows: 60px 10px 450px 10px 90px;
+        row-gap:0px;
+
+        grid-template-areas:
+        "posn0 posn1 posn2 posn7"
+        "posn0 posn8 posn8 posn7"
+        "posn0 posn3 posn4 posn7"
+        "posn0 posn9 posn9 posn7"
+        "posn0 posn5 posn6 posn7"}
+
+@media screen and (max-width: 950px){
+    .container{
+        display: grid;
+        grid-template-columns:1fr;
+        background-color: #641ed3 ;
+        grid-template-rows: 50px 40px 10px 500px auto 10px 40px 50px;
+        grid-template-areas:
+        "posn1" 
+        "posn2"
+        "posn8"
+        "posn3"
+        "posn4"
+        "posn9"
+        "posn5"
+        "posn6"
+        }
+
+        .photo{
+            grid-area:posn3;
+            background-color: black;
+            width: 100%;
+        }
+
+
+}
+
+.bordertop{
+    grid-area:posn8;
+    background-color: #158a05;
+}
+.borderbottom{
+    grid-area:posn9;
+    background-color: #158a05;
+}
+
+
+.title{
+    grid-area:posn1;
+    float: right;
+    color:whitesmoke;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center; /* Added */ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.buttons{
+    grid-area:posn2;
+    float: right;
+    color:whitesmoke;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center; /* Added */ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.button1 {
+    background-color: rgb(104, 104, 104); 
+    color: rgb(255, 255, 255); 
+    border: 1px solid hsl(128, 53%, 47%);
+    width:80px;
+    height: 25px;
+  }
+
+  .button1:hover {
+    background-color: rgb(247, 247, 247); 
+    color: rgb(19, 19, 19); 
+    border: 1px solid #777777;
+    width:90px;
+    height: 25px;
+  }
+
+.photo{
+    grid-area:posn3;
+    background-color: black;
+    justify-content: center;
+    display:flex;
+    object-fit:contain;
+}
+
+.text{
+    font-family: Roboto, sans-serif;
+    grid-area:posn4;
+    background-color:rgb(182, 182, 182);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: grid; /* Added */
+    align-items: center; /* Added */ 
+    justify-content: center;
+}
+
+.footer1{
+    grid-area:posn5;
+    float: right;
+    color:whitesmoke;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center; /* Added */ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer2{
+    grid-area:posn6;
+    float: right;
+    color:whitesmoke;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center; /* Added */ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
